@@ -1,4 +1,4 @@
-# inv_design
+# Inverter Design
 Inverter design for given rise/fall Delay, rise/fall time and load conditions
 
 ## Contents
