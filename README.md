@@ -29,7 +29,7 @@ Design a minimum-sized inverter such that the following specification is met.
 For a load of 20fF, (Rise-delay) = (Fall-delay) < 50ps at SS, 1.08V, 125C
 
 
-# Schematics_1 in Virtuoso:
+## Schematics_1 in Virtuoso:
 
 ![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/layout_schem/shchematic1.png?raw=true)
 
@@ -40,7 +40,7 @@ The PMOS W/L is 2.095/0.06.
 The NMOS W/L is 1.005/0.06.
 
 
-# Pre-Layout Simulation Results1
+## Pre-Layout Simulation Results1
 
 * **Input and Output Waveform of the Inverter**
 
@@ -74,12 +74,12 @@ Fall Delay
 
 ![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/pre_wave.png?raw=true)
 
-# Layout of the Inverter in Virtuoso (indicating different layers)
+## Layout of the Inverter in Virtuoso (indicating different layers)
 
 ![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/layout_schem/lay_1.png?raw=true)
 
 
-# Post-layout Simulation Results1
+## Post-layout Simulation Results1
 
 
 
@@ -100,7 +100,7 @@ Fall Delay
 ![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/post_falld.png?raw=true)
 
 
-# Pre-Layout vs Post-layout Simulations Results1
+## Pre-Layout vs Post-layout Simulations Results1
 
 | Parameters |  Pre-Layout                |  Post-Layout                |
 | :-------- |  :------------------------- |   :------------------------- |
@@ -112,7 +112,7 @@ Fall Delay
 | `Fall Dlay (TPHL)` |  45.66 ps |     47.40 ps |
 | `Avg. Delay` |  45.65 ps |    47.39 ps |
 
-# Changes in Post-Layout1
+## Changes in Post-Layout1
 
 - Due to the introduction of Parasitic Capacitances and Resistances in the Post-Layout in various nodes of the design the Delays increases and thus performance degrades by a small margin.
 - Increase in contact resistance, contact to Poly Capacitance and total output capacitance leads to increase in the delay in post layout.
@@ -130,7 +130,7 @@ Fall Delay
 (approx) at Slow NMOS-Slow PMOS (SS), 1.08V, 125C
 
 
-# Schematics_2 in Virtuoso:
+## Schematics_2 in Virtuoso:
 
 ![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/layout_schem/shchematic2.png?raw=true)
 
@@ -140,7 +140,7 @@ For the Required Specification:
 The PMOS W/L is 7.875/0.06. 
 The NMOS W/L is 3.235/0.06.
 
-# Pre-Layout Simulation Results2
+## Pre-Layout Simulation Results2
 
 * **Timing Specifications2**
 
@@ -154,12 +154,12 @@ Rise Time
 Fall Time
 ![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/pre_fallt.png?raw=true)
 
-# Layout of the Inverter in Virtuoso (indicating different layers)
+## Layout of the Inverter in Virtuoso (indicating different layers)
 
 ![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/layout_schem/lay_2.png?raw=true)
 
 
-# Post-layout Simulation Results2
+## Post-layout Simulation Results2
 
 * **Timing Specifications2**
 
@@ -174,7 +174,7 @@ Fall Time
 ![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/post_fallt.png?raw=true)
 
 
-# Pre-Layout vs Post-layout Simulations Results2
+## Pre-Layout vs Post-layout Simulations Results2
 
 | Parameters |  Pre-Layout                |  Post-Layout                |
 | :-------- |  :------------------------- |   :------------------------- |
@@ -185,7 +185,7 @@ Fall Time
 | `Rise TIME` |  19.61 ps |     20.44 ps |
 | `Fall TIME` |  19.61 ps |     19.58 ps |
 
-# Changes in Post-Layout2
+## Changes in Post-Layout2
 
 - Due to the introduction of Parasitic Capacitances and Resistances in the Post-Layout in various nodes of the design the Delays increases and thus performance degrades by a small margin.
 - Increase in contact resistance, contact to Poly Capacitance and total output capacitance leads to increase in the delay in post layout.
