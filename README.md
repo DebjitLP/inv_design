@@ -28,7 +28,10 @@ Inverter design for given rise/fall Delay, rise/fall time and load conditions
 Design a minimum-sized inverter such that the following specification is met.
 1. For a load of 20fF, (Rise-delay) = (Fall-delay) < 50ps at SS, 1.08V, 125C
 
-## Schematics_1 in Virtuoso:
+
+# Schematics_1 in Virtuoso:
+
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/layout_schem/shchematic1.png?raw=true)
 
 For achieving the equal rise and fall delays here only the width of the PMOS and 
 NMOS is varied. Length of the devices are kept constant.
@@ -36,18 +39,68 @@ For the Required Specification:
 The PMOS W/L is 2.095/0.06. 
 The NMOS W/L is 1.005/0.06.
 
-* **Reference Design1**
 
-![Reference Circuit Diagram](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemioryRead/blob/main/Circuit%20Diagrams/reference_design.png?raw=true)
+# Pre-Layout Simulation Results1
 
-* **Reference Waveforms1**
+* **Input and Output Waveform of the Inverter**
 
-![Reference Circuit Diagram](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead/blob/main/Waveforms/wavef.png?raw=true)
+The simulations were run for 100ns with Input signal of time period of 10ns (Duty Cycle = 0.5).
+
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/pre_wave.png?raw=true)
+
+
+
+* **Timing Specifications1:**
+
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/dlpt/pre_time1.png?raw=true)
+
+
+
+* **Waveforms of Rise and Fall Delay**
+
+Rise Delay
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/pre_rised.png?raw=true)
+
+Fall Delay
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/pre_falld.png?raw=true)
+
+
+
+* **Width of NMOS fixed at 1.005 and Width of PMOS swept to Obtain the Sizing:**
+
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/sweep_size1.png?raw=true)
+
+* **Input and Output Waveform of the Inverter:**
+
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/pre_wave.png?raw=true)
+
+# Layout of the Inverter in Virtuoso (indicating different layers)
+
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/layout_schem/lay_1.png?raw=true)
+
+
+# Post-layout Simulation Results1
 
 
 
 
-* **Pre-Layout vs Post-layout Simulations Results1**
+
+* **Timing Specifications1:**
+
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/dlpt/post_time1.png?raw=true)
+
+
+
+* **Waveforms of Rise and Fall Delay**
+
+Rise Delay
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/post_rised.png?raw=true)
+
+Fall Delay
+![Reference Circuit Diagram](https://github.com/DebjitLP/inv_design/blob/main/waveforms/post_falld.png?raw=true)
+
+
+# Pre-Layout vs Post-layout Simulations Results1
 
 | Parameters |  Pre-Layout                |  Post-Layout                |
 | :-------- |  :------------------------- |   :------------------------- |
@@ -58,6 +111,18 @@ The NMOS W/L is 1.005/0.06.
 | `Rise Delay (TPLH)` |  45.65 ps |     47.39 ps |
 | `Fall Dlay (TPHL)` |  45.66 ps |     47.40 ps |
 | `Avg. Delay` |  45.65 ps |    47.39 ps |
+
+# Changes in Post-Layout1
+
+- Due to the introduction of Parasitic Capacitances and Resistances in the Post-Layout in various nodes of the design the Delays increases and thus performance degrades by a small margin.
+- Increase in contact resistance, contact to Poly Capacitance and total output capacitance leads to increase in the delay in post layout.
+
+* **What can be done to avoid mismatch in pre-layout and post-layout results:**
+
+- If we are able to model the parasitic capacitance in the pre layout itself, do the sizing based on total load capacitance and modelled parasitic then the mis-match could be avoided to some extent.
+- Reducing the number of contacts in the post-layouts would reduce the capacitance of Contact-Poly, thus would help in reducing the delay and mismatch.
+- Over qualifying the specifications by a small margin by taking the sizes of the devices a little bit larger would help in reducing the delays and mismatch as well.
+
 
 ##  SRAM Cell Design
 
