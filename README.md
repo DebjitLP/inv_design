@@ -36,8 +36,18 @@ For the Required Specification:
 The PMOS W/L is 2.095/0.06. 
 The NMOS W/L is 1.005/0.06.
 
+* **Reference Design1**
 
-* **Target Specification**
+![Reference Circuit Diagram](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemioryRead/blob/main/Circuit%20Diagrams/reference_design.png?raw=true)
+
+* **Reference Waveforms1**
+
+![Reference Circuit Diagram](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead/blob/main/Waveforms/wavef.png?raw=true)
+
+
+
+
+* **Pre-Layout vs Post-layout Simulations Results1**
 
 | Parameters |  Pre-Layout                |  Post-Layout                |
 | :-------- |  :------------------------- |   :------------------------- |
@@ -48,16 +58,6 @@ The NMOS W/L is 1.005/0.06.
 | `Rise Delay (TPLH)` |  45.65 ps |     47.39 ps |
 | `Fall Dlay (TPHL)` |  45.66 ps |     47.40 ps |
 | `Avg. Delay` |  45.65 ps |    47.39 ps |
-
-* **Reference Design**
-
-![Reference Circuit Diagram](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemioryRead/blob/main/Circuit%20Diagrams/reference_design.png?raw=true)
-
-* **Reference Waveforms**
-
-![Reference Circuit Diagram](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead/blob/main/Waveforms/wavef.png?raw=true)
-
-
 
 ##  SRAM Cell Design
 
