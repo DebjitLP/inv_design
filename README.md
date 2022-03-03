@@ -2,18 +2,21 @@
 Inverter design for given rise/fall Delay, rise/fall time and load conditions
 
 ## Contents
-
-* [Abstract](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead#abstract)
-* [Tools Used](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead#tools-used)
-* [Working](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead#working)
-* [SRAM Cell Design](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead#sram-cell-design)
-* [Sense Amplifier Design](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead#sense-amplifier-design)
-* [Memory Read Operation](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead#memory-read-operation)
-* [Netlist](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead#netlist)
-* [Author](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead#author)
-* [Acknowledgements](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead#acknowledgements)
-* [References](https://github.com/DebjitLP/CloudBased_Analog_Hackathon_MemoryRead#references)
-
+* [Tools Used](https://github.com/DebjitLP/inv_design#tools-used)
+* [Abstract1](https://github.com/DebjitLP/inv_design#abstract1)
+* [Schematics_1 in Virtuoso](https://github.com/DebjitLP/inv_design#schematics_1-in-virtuoso)
+* [Pre-Layout Simulation Results1](https://github.com/DebjitLP/inv_design#pre-layout-simulation-results1)
+* [Layout of the Inverter in Virtuoso (indicating different layers)](https://github.com/DebjitLP/inv_design#layout-of-the-inverter-in-virtuoso-indicating-different-layers)
+* [Post-layout Simulation Results1](https://github.com/DebjitLP/inv_design#post-layout-simulation-results1)
+* [Pre-Layout vs Post-layout Simulations Results1](https://github.com/DebjitLP/inv_design#pre-layout-vs-post-layout-simulations-results1)
+* [Changes in Post-Layout1](https://github.com/DebjitLP/inv_design#changes-in-post-layout1)
+* [Abstract2](https://github.com/DebjitLP/inv_design#abstract2)
+* [Schematics_2 in Virtuoso](https://github.com/DebjitLP/inv_design#schematics_2-in-virtuoso)
+* [Pre-Layout Simulation Results2](https://github.com/DebjitLP/inv_design/blob/main/README.md#pre-layout-simulation-results2)
+* [Layout of the Inverter in Virtuoso (indicating different layers)](https://github.com/DebjitLP/inv_design/blob/main/README.md#layout-of-the-inverter-in-virtuoso-indicating-different-layers-1)
+* [Post-layout Simulation Results2](https://github.com/DebjitLP/inv_design/blob/main/README.md#post-layout-simulation-results2)
+* [Pre-Layout vs Post-layout Simulations Results2](https://github.com/DebjitLP/inv_design/blob/main/README.md#pre-layout-vs-post-layout-simulations-results2)
+* [Changes in Post-Layout2](https://github.com/DebjitLP/inv_design/blob/main/README.md#changes-in-post-layout2)
 
 
 
