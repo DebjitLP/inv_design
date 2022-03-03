@@ -17,6 +17,8 @@ Inverter design for given rise/fall Delay, rise/fall time and load conditions
 * [Post-layout Simulation Results2](https://github.com/DebjitLP/inv_design/blob/main/README.md#post-layout-simulation-results2)
 * [Pre-Layout vs Post-layout Simulations Results2](https://github.com/DebjitLP/inv_design/blob/main/README.md#pre-layout-vs-post-layout-simulations-results2)
 * [Changes in Post-Layout2](https://github.com/DebjitLP/inv_design/blob/main/README.md#changes-in-post-layout2)
+* [Author](https://github.com/DebjitLP/inv_design/blob/main/README.md#author)
+* [Acknowledgements](https://github.com/DebjitLP/inv_design/blob/main/README.md#acknowledgements)
 
 
 
