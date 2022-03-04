@@ -27,6 +27,8 @@ Inverter design for given rise/fall Delay, rise/fall time and load conditions
 - Cadence Virtuoso
 - Cadence Spectre
 - STMicroelectronics 65nm
+- Mentor Graphics Eldo
+- Ezwave
 
 ## Abstract1
 
